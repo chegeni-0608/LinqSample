@@ -32,13 +32,15 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSample02 = new System.Windows.Forms.Button();
+            this.btnLinqSample3 = new System.Windows.Forms.Button();
+            this.LinqSample04 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLinqSample01
             // 
             this.btnLinqSample01.Location = new System.Drawing.Point(47, 32);
             this.btnLinqSample01.Name = "btnLinqSample01";
-            this.btnLinqSample01.Size = new System.Drawing.Size(139, 42);
+            this.btnLinqSample01.Size = new System.Drawing.Size(158, 42);
             this.btnLinqSample01.TabIndex = 0;
             this.btnLinqSample01.Text = "LinqSample01";
             this.btnLinqSample01.UseVisualStyleBackColor = true;
@@ -66,17 +68,39 @@
             // 
             this.btnSample02.Location = new System.Drawing.Point(47, 97);
             this.btnSample02.Name = "btnSample02";
-            this.btnSample02.Size = new System.Drawing.Size(139, 42);
+            this.btnSample02.Size = new System.Drawing.Size(158, 42);
             this.btnSample02.TabIndex = 3;
             this.btnSample02.Text = "LinqSample02";
             this.btnSample02.UseVisualStyleBackColor = true;
             this.btnSample02.Click += new System.EventHandler(this.btnSample02_Click);
+            // 
+            // btnLinqSample3
+            // 
+            this.btnLinqSample3.Location = new System.Drawing.Point(47, 162);
+            this.btnLinqSample3.Name = "btnLinqSample3";
+            this.btnLinqSample3.Size = new System.Drawing.Size(158, 42);
+            this.btnLinqSample3.TabIndex = 4;
+            this.btnLinqSample3.Text = "LinqSample03";
+            this.btnLinqSample3.UseVisualStyleBackColor = true;
+            this.btnLinqSample3.Click += new System.EventHandler(this.btnLinqSample3_Click);
+            // 
+            // LinqSample04
+            // 
+            this.LinqSample04.Location = new System.Drawing.Point(47, 228);
+            this.LinqSample04.Name = "LinqSample04";
+            this.LinqSample04.Size = new System.Drawing.Size(158, 42);
+            this.LinqSample04.TabIndex = 5;
+            this.LinqSample04.Text = "LinqSample03+3";
+            this.LinqSample04.UseVisualStyleBackColor = true;
+            this.LinqSample04.Click += new System.EventHandler(this.LinqSample04_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LinqSample04);
+            this.Controls.Add(this.btnLinqSample3);
             this.Controls.Add(this.btnSample02);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
@@ -94,6 +118,8 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSample02;
+        private System.Windows.Forms.Button btnLinqSample3;
+        private System.Windows.Forms.Button LinqSample04;
     }
 }
 

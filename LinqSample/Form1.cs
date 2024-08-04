@@ -12,7 +12,7 @@ namespace LinqSample
 {
     public partial class Form1 : Form
     {
-        int[]  _numbers = {14,58,52,475,11,20,14,47,58 };
+        int[]  _numbers = {14,58,52,475,11,20,14,47,58,36,48,89,47,13,22 };
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +54,24 @@ namespace LinqSample
             {
                 listBox1.Items.Add(item);
             }
+        }
+
+        private void btnLinqSample3_Click(object sender, EventArgs e)
+        {
+            var result = from r in _numbers
+                         where r > 38 & r < 65 
+                         orderby r descending   
+                         select r;
+            AddToListBox(result.ToArray());
+        }
+
+        private void LinqSample04_Click(object sender, EventArgs e)
+        {
+            var result = from s in _numbers
+                         where s > 38 & s < 65
+                         orderby s ascending
+                         select s + 3;
+            AddToListBox(result.ToArray());
         }
     }
 }
