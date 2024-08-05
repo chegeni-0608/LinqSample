@@ -34,6 +34,7 @@
             this.btnSample02 = new System.Windows.Forms.Button();
             this.btnLinqSample3 = new System.Windows.Forms.Button();
             this.LinqSample04 = new System.Windows.Forms.Button();
+            this.btnLinqSample4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLinqSample01
@@ -94,11 +95,22 @@
             this.LinqSample04.UseVisualStyleBackColor = true;
             this.LinqSample04.Click += new System.EventHandler(this.LinqSample04_Click);
             // 
+            // btnLinqSample4
+            // 
+            this.btnLinqSample4.Location = new System.Drawing.Point(47, 290);
+            this.btnLinqSample4.Name = "btnLinqSample4";
+            this.btnLinqSample4.Size = new System.Drawing.Size(158, 42);
+            this.btnLinqSample4.TabIndex = 6;
+            this.btnLinqSample4.Text = "LinqSample04";
+            this.btnLinqSample4.UseVisualStyleBackColor = true;
+            this.btnLinqSample4.Click += new System.EventHandler(this.btnLinqSample4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLinqSample4);
             this.Controls.Add(this.LinqSample04);
             this.Controls.Add(this.btnLinqSample3);
             this.Controls.Add(this.btnSample02);
@@ -120,6 +132,7 @@
         private System.Windows.Forms.Button btnSample02;
         private System.Windows.Forms.Button btnLinqSample3;
         private System.Windows.Forms.Button LinqSample04;
+        private System.Windows.Forms.Button btnLinqSample4;
     }
 }
 

@@ -17,7 +17,7 @@ namespace LinqSample
         {
             InitializeComponent();
         }
-
+        //odd numbers
         private void btnLinqSample01_Click(object sender, EventArgs e)
         {
             var result = from n in _numbers
@@ -30,7 +30,7 @@ namespace LinqSample
             // listBox1.Items.Add(item);
             //}
         }
-
+        //even numbers
         private void btnSample02_Click(object sender, EventArgs e)
         {
             var result = from q in _numbers
@@ -47,6 +47,7 @@ namespace LinqSample
             //}
 
         }
+        //total number
         private void AddToListBox(int[] items)
         {   
          listBox1.Items.Clear();
@@ -55,7 +56,7 @@ namespace LinqSample
                 listBox1.Items.Add(item);
             }
         }
-
+        //show numbers  > 38 & < 65
         private void btnLinqSample3_Click(object sender, EventArgs e)
         {
             var result = from r in _numbers
@@ -64,13 +65,21 @@ namespace LinqSample
                          select r;
             AddToListBox(result.ToArray());
         }
-
+        // 
         private void LinqSample04_Click(object sender, EventArgs e)
         {
             var result = from s in _numbers
                          where s > 38 & s < 65
                          orderby s ascending
                          select s + 3;
+            AddToListBox(result.ToArray());
+        }
+
+        private void btnLinqSample4_Click(object sender, EventArgs e)
+        {
+            var result = from s in _numbers
+                         orderby s ascending
+                         select s < 20 ? s + 5  : s ;
             AddToListBox(result.ToArray());
         }
     }
